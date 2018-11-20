@@ -53,6 +53,7 @@
             this.btnSelectFolder.TabIndex = 1;
             this.btnSelectFolder.Text = "Выбрать папку";
             this.btnSelectFolder.UseVisualStyleBackColor = true;
+            this.btnSelectFolder.Click += new System.EventHandler(this.btnSelectFolder_Click);
             // 
             // btnClearList
             // 
