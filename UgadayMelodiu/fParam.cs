@@ -20,6 +20,7 @@ namespace UgadayMelodiu
 
         private void btnOK_Click(object sender, EventArgs e)
         {
+            Victorina.WriteParam();
             this.Hide();
         }
 
