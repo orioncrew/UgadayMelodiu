@@ -34,5 +34,11 @@ namespace UgadayMelodiu
         {
             fg.ShowDialog();
         }
+
+        private void fMain_Load(object sender, EventArgs e)
+        {
+            Victorina.ReadParam();
+            Victorina.ReadMusic();
+        }
     }
 }
