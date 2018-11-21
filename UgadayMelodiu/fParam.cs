@@ -36,6 +36,8 @@ namespace UgadayMelodiu
                 string[] music_list = Directory.GetFiles(fbd.SelectedPath, "*.mp3", cbAllDirectory.Checked?SearchOption.AllDirectories:SearchOption.TopDirectoryOnly);
                 listBox1.Items.Clear();
                 listBox1.Items.AddRange(music_list);
+                Victorina.list.Clear();
+                Victorina.list.AddRange(music_list);
             }
         }
 
