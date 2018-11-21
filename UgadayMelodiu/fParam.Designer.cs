@@ -63,6 +63,7 @@
             this.btnClearList.TabIndex = 2;
             this.btnClearList.Text = "Очистить";
             this.btnClearList.UseVisualStyleBackColor = true;
+            this.btnClearList.Click += new System.EventHandler(this.btnClearList_Click);
             // 
             // cbAllDirectory
             // 

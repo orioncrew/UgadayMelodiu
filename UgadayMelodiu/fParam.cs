@@ -38,5 +38,10 @@ namespace UgadayMelodiu
                 listBox1.Items.AddRange(music_list);
             }
         }
+
+        private void btnClearList_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+        }
     }
 }
