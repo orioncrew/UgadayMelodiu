@@ -51,6 +51,12 @@
     <Compile Include="fGame.Designer.cs">
       <DependentUpon>fGame.cs</DependentUpon>
     </Compile>
+    <Compile Include="fMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMessage.Designer.cs">
+      <DependentUpon>fMessage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Victorina.cs" />
     <EmbeddedResource Include="fGame.resx">
       <DependentUpon>fGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMessage.resx">
+      <DependentUpon>fMessage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
