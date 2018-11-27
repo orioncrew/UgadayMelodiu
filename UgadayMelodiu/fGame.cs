@@ -14,6 +14,7 @@ namespace UgadayMelodiu
     {
         Random rnd = new Random();
         int musicDuration = Victorina.musicDuration;
+        bool[] players = new bool[2];
 
         public fGame()
         {
@@ -30,6 +31,9 @@ namespace UgadayMelodiu
                 WMP.URL = Victorina.list[n];
                 // WMP.Ctlcontrols.play();
                 Victorina.list.RemoveAt(n);
+                lblMelodyCount.Text = Victorina.list.Count.ToString();
+                players[0] = false;
+                players[1] = false;
             }
         }
 
@@ -101,6 +105,7 @@ namespace UgadayMelodiu
 
         private void fGame_KeyDown(object sender, KeyEventArgs e)
         {
+            if (!timer1.Enabled) return;
             if(e.KeyData == Keys.A)
             {
                 GamePause();
