@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 
-//ааа
+//аааррр
 namespace UgadayMelodiu
 {
     public partial class fGame : Form
