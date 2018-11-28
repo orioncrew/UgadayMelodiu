@@ -32,9 +32,14 @@ namespace UgadayMelodiu
             if(timeAnswer == 0)
             {
                 timer1.Stop();
-                SoundPlayer sp = new SoundPlayer("E:\\source\\repos\\UgadayMelodiu\\UgadayMelodiu\\Resources\\Beep2.wav");
+                SoundPlayer sp = new SoundPlayer(@"Resources\Beep2.wav");
                 sp.Play();
             }
+        }
+
+        private void fMessage_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            timer1.Stop();
         }
     }
 }

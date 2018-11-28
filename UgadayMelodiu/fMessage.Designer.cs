@@ -91,6 +91,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblMessage);
             this.Name = "fMessage";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fMessage_FormClosing);
             this.Load += new System.EventHandler(this.fMessage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

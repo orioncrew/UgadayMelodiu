@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace UgadayMelodiu
 {
@@ -111,6 +112,8 @@ namespace UgadayMelodiu
                 GamePause();
                 fMessage fm = new fMessage();
                 fm.lblMessage.Text = "Игрок 1";
+                SoundPlayer sp = new SoundPlayer(@"Resources\Beep2.wav");
+                sp.PlaySync();
                 if (fm.ShowDialog() == DialogResult.Yes)
                 {
                     lblCounter1.Text = Convert.ToString(Convert.ToInt32(lblCounter1.Text) + 1);
@@ -124,6 +127,8 @@ namespace UgadayMelodiu
                 GamePause();
                 fMessage fm = new fMessage();
                 fm.lblMessage.Text = "Игрок 2";
+                SoundPlayer sp = new SoundPlayer(@"Resources\Beep2.wav");
+                sp.PlaySync();
                 if (fm.ShowDialog() == DialogResult.Yes)
                 {
                     lblCounter2.Text = Convert.ToString(Convert.ToInt32(lblCounter2.Text) + 1);
